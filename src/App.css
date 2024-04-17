@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.titulo {
+  font-size: 20pt;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagem-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.bottom-right-btn {
+  position: fixed;
+  bottom: 50px;
+  right: 15%;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.bottom-right-btn:hover,
+.bottom-right-btn:focus {
+  background-color: #0056b3;
+}
+
+/* Estilos para dispositivos de tela pequena (celulares) */
+@media only screen and (max-width: 600px) {
+  .imagem-back {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    object-fit: cover;
+  }
+  .bottom-right-btn {
+    bottom: 20px;
+  }
+}
+
+/* Estilos para dispositivos de tela média (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .imagem-back {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    object-fit: cover;
+  }
+}
